@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Something</title>
-    <meta charset="utf-8" />
-    <link href="src/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | todo-page</title>
+    <link rel="stylesheet" href="src/styles.css" />
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1>00:00</h1>
+    <div class="clock-box">
+        <span class="js-clock">00:00:00</span>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name" />
+    <form class="js-userForm form">
+        <input type="text" placeholder="what is your name">
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="wirte a to do " />
-    </form>
-    <ul class="js-toDoList">
-    </ul>
-    <span class="js-weather"></span>
+    <div class="name-box">
+        <span class="js-gretting gretting"></span>
+    </div>
+    <div class="todo-box">
+        <form class="js-toDoForm todoform">
+            <input type="text" placeholder="To Do List" />
+        </form>
+        <ul class="js-ul"></ul>
+    </div>
+    <span class="js-weather weather"></span>
     <script src="src/clock.js"></script>
-    <script src="src/gretting.js"></script>
+    <script src="src/name.js"></script>
     <script src="src/todo.js"></script>
     <script src="src/backgr.js"></script>
     <script src="src/weather.js"></script>

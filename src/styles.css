@@ -1,26 +1,43 @@
-body{
-    background-color: #2c3e50;
-}
-
-.btn{
-    cursor: pointer;
-}
+@import "reset.css";
 
 body{
-    color: #34495e;
+    background-color: #34495e;
 }
 
-.clicked{
-    color: #7f8c8d;
+.clock-box{
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 50px;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    outline: none;
+    text-align: center;
 }
 
 .form,
-.greetings{
+.gretting,
+.todoform{
     display: none;
 }
 
-.showing{
-    display: block;
+
+.name-box{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.todo-box{
+    text-align: center;
+}
+
+.todo-box > form{
+    margin-bottom: 30px;
 }
 
 @keyframes fadeIn{
@@ -39,47 +56,28 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
-    animation: fadeIn 0.3s ease-in;
+    animation: fadeIn 0.5s    linear ;
 }
 
-.js-clock{
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-
-.js-weather{
+.weather{
     position: absolute;
-    right: 50px;
-    top: 50px;
-    font-size: 20px;
+    top: 20px;
+    right: 30px;
 }
 
-.js-greetings{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 20px;
+.showing{
+   display: block;
 }
 
-.js-toDoForm{
-    margin-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+input{
+    width: 15%;
+    height: 25%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
 }
 
-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-li > span { 
-    color: black;
-}
-
-button{
-    margin-right: 50px;
+input[type=text]:focus::placeholder{
+    color: transparent;
 }

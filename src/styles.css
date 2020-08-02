@@ -84,7 +84,6 @@ input[type=text]:focus::placeholder{
 
 .screenshot{
     width: 100%;
-    height: 500px;
     overflow: scroll;
     display: flex;
 }
